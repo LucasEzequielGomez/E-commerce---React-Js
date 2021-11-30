@@ -6,4 +6,6 @@ npm start
 
 git commit -m 'texto especificando las modificaciones'
 
+git fetch
+
 git push origin
