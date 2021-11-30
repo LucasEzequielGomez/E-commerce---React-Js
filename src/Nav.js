@@ -1,8 +1,8 @@
 const Nav = () => {
     return (
-        <nav>
-            <a href="#">Link</a>
-            <a href="#">Link</a>
+        <nav id="main-nav" className="nav">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
         </nav>
     )
 
