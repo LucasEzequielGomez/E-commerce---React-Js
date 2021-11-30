@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <footer>
-            ¿Está?
+            Lucas Gomez
         </footer>
     )
 }
