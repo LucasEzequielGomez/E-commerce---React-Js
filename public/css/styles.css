@@ -1,0 +1,32 @@
+.navbar-nav{
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #343a40;
+  height: 50px;
+}
+
+footer{
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom, #6CA7F6, #ECF0F1);
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-family: 'Staatliches', cursive;
+    list-style: none;
+    color: rgb(33, 37, 41);
+  }
+
+  footer h2{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  footer h3{
+    font-family: 'Roboto', sans-serif;
+  }
