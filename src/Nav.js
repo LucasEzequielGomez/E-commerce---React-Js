@@ -1,24 +1,14 @@
-import CartWidget from "./CartWidget"
+import { getCategories } from 'Productos',
 
-const Nav = () => {
+
+const NavBar = () => {
     return (
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-        <a class="navbar-brand" href="#">El corralón de Bella Vista</a>
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Promociones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Presupuestos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-          </ul>
+      <nav className="NavBar">
+        <div>
+          <h3>El corralon de Bella Vista</h3>
+        </div>
+        <div className="Categories">
+          {categories.map(c => <button key={c.id} className='Option'>{c.description}</button>)}
         </div>
         <CartWidget/>
       </nav>
