@@ -40,10 +40,10 @@ const [productos,setPreductos] = useState
                 <button onClick={reducirContador}>-</button>
                 <button onClick={aumentarContador}>+</button>
             </itemCount>
-            <Main>
+            <Main/>
             <Footer/>
         </>
     )
 }
 
-export default App;
+export default App

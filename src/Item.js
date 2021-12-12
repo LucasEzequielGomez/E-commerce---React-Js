@@ -1,27 +1,24 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import ItemListContainer from './ItemListContainer';
+import ItemList from './ItemList';
 
 
-
-const ItemListContainer = () =>{
-
-    const products = [
-        {id:1,nombre:"producto1"},
-        {id:2,nombre:"producto2"},
-        {id:3,nombre:"producto3"},
-        {id:4,nombre:"producto4"}
-    ];
-    
-    return (
-        <div className="ItemListContainer">
-            <div>
-                <input type="text" onChange={(evt) => setInput(evt.target.value)}/>
-                <button onClick={handleClick}>Search</button>
+const Item = ({product}) => {
+    return(
+        <div className="CardItem">
+            <div className="ContainerItem">
+                <h2 className="ItemHeader">
+                    {product.title}
+                </h2>
             </div>
-            <ItemList products={products}/>
+            <img src={product.img} alt={product.name} className="ItemImg"/>
+            <p className="Info">
+                Precio: {product.price}
+            </p>
+            <button>Ver detalle</button>
         </div>
     )
 }
-
-
-export default ItemListContainer
+ 
+export default Item

@@ -1,4 +1,4 @@
-import { getCategories } from 'Productos',
+import { getCategories } from 'Productos'
 
 
 const NavBar = () => {
