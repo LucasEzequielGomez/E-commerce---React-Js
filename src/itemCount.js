@@ -1,6 +1,4 @@
-import {useState} from "react"
-
-let stock = 1
+/*let stock = 1
 
 const [stock, initial] = useState (stock)
 
@@ -18,4 +16,4 @@ const itemCount = () => {
 
 }
 
-export default itemCount;
+export default itemCount;*/

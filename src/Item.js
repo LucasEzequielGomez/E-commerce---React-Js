@@ -1,7 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
 import ItemListContainer from './ItemListContainer';
-import ItemList from './ItemList';
 
 
 const Item = ({product}) => {
