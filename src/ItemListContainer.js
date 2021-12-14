@@ -3,7 +3,7 @@ import ItemList from './ItemList'
 
 const ItemListContainer = () =>{
     
-    const [products, setProfucts] = useState ([])
+    const [products, setProducts] = useState ([])
     const [input, setInput] = useState ('')
 
     useEffect (() => {
