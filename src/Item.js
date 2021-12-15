@@ -5,7 +5,7 @@ import ItemCount from './ItemCount'
 export const Item = ({product}) => {
 
     const onAdd = (contador) => {
-
+        console.log (`creo que voy ${contador} productos, we`)
     }
 
     return(
@@ -20,9 +20,11 @@ export const Item = ({product}) => {
                 Precio: {product.price}
             </p>
 
-            <ItemCount stock={product.stock} initial={product.initial} onAdd={onAdd}/>
+            <ItemCount stock={product.stock} initial={product.initial} onAdd={product.onAdd}/>
 
             <button>Ver detalle</button>
         </div>
     )
 }
+
+export default Item

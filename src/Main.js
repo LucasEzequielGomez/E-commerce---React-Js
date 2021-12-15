@@ -2,7 +2,7 @@ import React from 'react'
 import ItemListContainer from './ItemListContainer'
 
 
-const Main = ({productos,childen}) => {
+const Main = () => {
 
     return (
         <main>

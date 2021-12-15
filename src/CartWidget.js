@@ -1,9 +1,10 @@
+
 const CartWidget = () => {
     return (
         <div>
             <span class="material-icons">
-shopping_cart
-</span>
+                shopping_cart
+            </span>
         </div>
     )
 }

@@ -3,20 +3,20 @@ import { useState } from 'react'
 
 
 
-export const ItemCount = ({stock, initial, onAdd }) =>{
+export const ItemCount = ({ stock, initial, onAdd }) => {
+
     const [contador, setContador] = useState(initial);
 
     const decrementar = () => {
-        if (contador > initial) {
+        if (contador >= initial) {
             setContador(contador -1)
         }
     }
     const incrementar = () => {
-        if (contador < initial) {
+        if (contador < stock) {
             setContador(contador +1)
         }
     }
-
 
     return (
         <>
@@ -28,8 +28,10 @@ export const ItemCount = ({stock, initial, onAdd }) =>{
                 <span>
                     <button onClick={incrementar}>+</button>
                 </span>
-                <button onClick={()=>{(contador)}}>Agregar al carrito</button>
-            </div>
+                <button onClick={()=>{onAdd(contador)}}>Agregar al carrito</button>
+            </div>  
         </>
     )
 }
+
+export default ItemCount

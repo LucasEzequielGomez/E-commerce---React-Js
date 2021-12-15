@@ -1,14 +1,11 @@
-import { getCategories } from './Products'
+import CartWidget from "./CartWidget"
 
 
-const NavBar = () => {
+export const Nav = () => {
     return (
       <nav className="NavBar">
         <div>
           <h3>El corralon de Bella Vista</h3>
-        </div>
-        <div className="Categories">
-          {categories.map(c => <button key={c.id} className='Option'>{c.description}</button>)}
         </div>
         <CartWidget/>
       </nav>
