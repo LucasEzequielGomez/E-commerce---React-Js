@@ -32,7 +32,6 @@ const [products,setPreducts] = useState
             </>
         )
     },[])
-  
-    
+
 
 export default App

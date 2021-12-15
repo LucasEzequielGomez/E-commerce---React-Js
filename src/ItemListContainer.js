@@ -3,12 +3,12 @@ import ItemList from './ItemList'
 
 const ItemListContainer = () =>{
     
-    const [products, setProducts] = useState ([])
+    const [product, setProducts] = useState ([])
     const [input, setInput] = useState ('')
 
     useEffect (() => {
         fetch ('https://api.mercadolibre.com/sites/MLA/search?category=MLA1500')
-        .then(respomse => {
+        .then(response => {
             return Response.json()
         }).then(res => {
             setProfucts(res.results.slice(0,10))
@@ -17,7 +17,7 @@ const ItemListContainer = () =>{
 
     const handleClick = () => {
         fetch ('https://api.mercadolibre.com/sites/MLA/search?q=${input}')
-        .then(respomse => {
+        .then(response => {
             return Response.json()
         }).then(res => {
             setProfucts(res.results.slice(0,10))
@@ -30,7 +30,7 @@ const ItemListContainer = () =>{
                 <input type="text" onChange={(evt) => setInput(evt.target.value)}/>
                 <button onClick={handleClick}>Search</button>
             </div>
-            <ItemList products={products}/>
+            <ItemList product={products}/>
         </div>
     )
 }

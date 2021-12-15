@@ -1,8 +1,13 @@
 import React from 'react'
-import ItemListContainer from './ItemListContainer';
+import ItemCount from './ItemCount'
 
 
-const Item = ({product}) => {
+export const Item = ({product}) => {
+
+    const onAdd = (contador) => {
+
+    }
+
     return(
         <div className="CardItem">
             <div className="ContainerItem">
@@ -14,9 +19,10 @@ const Item = ({product}) => {
             <p className="Info">
                 Precio: {product.price}
             </p>
+
+            <ItemCount stock={product.stock} initial={product.initial} onAdd={onAdd}/>
+
             <button>Ver detalle</button>
         </div>
     )
 }
- 
-export default Item
