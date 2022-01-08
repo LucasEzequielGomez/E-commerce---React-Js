@@ -1,20 +1,18 @@
-import Button from 'react-bootstrap-button'
-import ItemListContainer from './ItemListConteiner'
+import React from 'react'
+import { Routes,Route} from 'react-router-dom'
+import ItemListContainer from './ItemListContainer'
+import ItemDetailContainer from './ItemDetailContainer'
 
 
-
-
-const Main = ({productos,childen}) => {
+const Main = () => {
 
     return (
         <main>
-            <h2>e-commerce</h2>
-            {children}
-            {productos.map((elemnto,indice)=>{
-                return <p>{elemento.nombre</p>
-            })}
-            <ItemListContainer greeting="Bienvenido"/>
-            <Button variant="primary">Eh?</Button>
+            <Routes>
+                <Route path="/" element={<ItemListContainer/>}/>
+                <Route path="/categoria/:id" element={<ItemListContainer/>}/>
+                <Route path="item/:id" element={<ItemDetailContainer/>}/>
+            <Routes>
         </main>
     )
 }
