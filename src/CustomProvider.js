@@ -28,12 +28,6 @@ const CustomProvider = ({children}) => {
         agregarProducto,
         eliminarProducto,
         vaciarCarrito
-    }
-
-    return (
-        <Provider value={valorContexto}>
-            {children}
-        </Provider>
-    )
+        }    
     }
 }

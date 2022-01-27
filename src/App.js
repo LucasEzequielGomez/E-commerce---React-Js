@@ -9,8 +9,10 @@ const App = () => {
 
     return(
         <BrowserRouter>
+            <CustomProvider>
                 <Header/>
                 <Layout/>
+            </CustomProvider>
         </BrowserRouter>
     )
 
